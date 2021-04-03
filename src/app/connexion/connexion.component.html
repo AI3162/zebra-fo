@@ -1,0 +1,37 @@
+<div class="mid-container" *ngIf="affichage">
+  <form [formGroup]="inscriptionForm" (ngSubmit)="onInscription()">
+    <label>Votre Nom:</label>
+    <input type="text" formControlName="nom" placeholder="Nom">
+    <label>Votre Prenom:</label>
+    <input type="text" formControlName="prenom" placeholder="Prenom">
+    <label>Sexe:</label>
+    <select formControlName="genre">
+      <option value="Male">Homme</option>
+      <option value="Female">Femme</option>
+    </select>
+    <label>N° tel.</label>
+    <input type="code" formControlName="code" placeholder="Ex. (222) 3131009">
+    <label>Votre Mot de Passe:</label>
+    <input type="password" formControlName="motDePasse" placeholder="Mot de Passe">
+    <input type="submit" name="valider" value="S'inscrire">
+  </form>
+</div>
+<div class="mid-container" *ngIf="affichage === false">
+  <form [formGroup]="connexionForm" (ngSubmit)="onConnexion()">
+    <label>Votre Numero:</label>
+    <input type="text" formControlName="numero" placeholder="Numero" value="(222) 3685243">
+    <label>Votre Mot de Passe:</label>
+    <input type="password" formControlName="motDePasse" placeholder="Mot de Passe" value="123456">
+    <input type="submit" name="valider" value="Se Connecter">
+  </form>
+</div>
+<button (click)="onAffichage()">{{bouton}}</button>
+<p>
+  {{messageConnexion}}
+</p>
+
+<p>
+  {{messageInscription}}
+</p>
+<a href="historique">historique</a>
+

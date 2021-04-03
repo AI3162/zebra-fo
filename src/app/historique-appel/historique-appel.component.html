@@ -1,0 +1,23 @@
+<div class="mid-container">
+  <table>
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Numéro appelé</th>
+      <th>Date de l'appel</th>
+      <th>°</th>
+    </tr>
+    </thead>
+    <tbody>
+    <ng-container *ngFor="let l of tableau">
+      <tr>
+        <td>{{l.id}}</td>
+        <td>{{l.calledNum}}</td>
+        <td>{{l.callDate}}</td>
+        <td>{{l.sent}}</td>
+      </tr>
+    </ng-container>
+    </tbody>
+  </table>
+
+</div>

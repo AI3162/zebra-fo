@@ -1,0 +1,468 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* basic colors */
+/* font */
+.bg-primary {
+  background-color: #43BBC2;
+}
+
+.bg-pink {
+  background-color: #F18C94;
+}
+
+.bg-warning {
+  background-color: #FFDE00;
+}
+
+.bg-danger {
+  background-color: #E94D3B;
+}
+
+.bg-dark {
+  background-color: #2c1f33;
+}
+
+.btn-primary {
+  border: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  will-change: transform;
+  letter-spacing: 0.05rem;
+  background: #43BBC2;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.3rem;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #3aabb2;
+  transform: scale(0.95);
+}
+
+.btn-pink {
+  border: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  will-change: transform;
+  letter-spacing: 0.05rem;
+  background: #F18C94;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.3rem;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.btn-pink:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #ee757f;
+  transform: scale(0.95);
+}
+
+.btn-warning {
+  border: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  will-change: transform;
+  letter-spacing: 0.05rem;
+  background: #FFDE00;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.3rem;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.btn-warning:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #e6c800;
+  transform: scale(0.95);
+}
+
+.btn-danger {
+  border: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  will-change: transform;
+  letter-spacing: 0.05rem;
+  background: #E94D3B;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.3rem;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.btn-danger:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #e63824;
+  transform: scale(0.95);
+}
+
+.btn-dark {
+  border: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  will-change: transform;
+  letter-spacing: 0.05rem;
+  background: #2c1f33;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.3rem;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.btn-dark:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #1e1523;
+  transform: scale(0.95);
+}
+
+table {
+  border-radius: 5px;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+table td, table th {
+  text-align: center;
+  padding: 8px;
+}
+
+table td {
+  border-right: 1px solid #f8f8f8;
+}
+
+table th {
+  text-transform: uppercase;
+}
+
+table thead th {
+  color: #ffffff;
+  background: #43BBC2;
+}
+
+table thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #2c1f33;
+}
+
+table tr:nth-child(even) {
+  background: #F8F8F8;
+}
+
+@media (max-width: 767px) {
+  table {
+    display: block;
+    width: 100%;
+  }
+
+  table thead, table tbody, table thead th {
+    display: block;
+  }
+
+  table thead th:last-child {
+    border-bottom: none;
+  }
+
+  table thead {
+    float: left;
+  }
+
+  table tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+
+  table td, table th {
+    padding: 20px 0.625em 0.625em 0.625em;
+    height: 60px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 120px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+  }
+
+  table thead th {
+    text-align: left;
+    border-bottom: 1px solid #f7f7f9;
+  }
+
+  table tbody tr {
+    display: table-cell;
+  }
+
+  table tbody tr:nth-child(odd) {
+    background: none;
+  }
+
+  table tr:nth-child(even) {
+    background: transparent;
+  }
+
+  table tr td:nth-child(odd) {
+    background: #F8F8F8;
+    border-right: 1px solid #E6E4E4;
+  }
+
+  table tr td:nth-child(even) {
+    border-right: 1px solid #E6E4E4;
+  }
+
+  table tbody td {
+    display: block;
+    text-align: center;
+  }
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #43BBC2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3aabb2;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown button {
+  border: none;
+  background-color: transparent;
+}
+
+.dropdown ul {
+  position: absolute;
+  background: white;
+  list-style: none;
+  width: 7rem;
+  height: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dropdown ul li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown ul li:hover {
+  background: #f4a3a9;
+  cursor: pointer;
+}
+
+.dropdown ul li:hover a {
+  color: #e90074;
+}
+
+.dropdown button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-white:hover {
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  margin: -0.3px 0 0 -0.3px;
+  background: #F0F5F8 no-repeat;
+  width: 100%;
+  min-width: 600px;
+  max-width: 2000px;
+  height: 95vh;
+  font-family: arial, sans-serif;
+  font-size: 0.8em;
+  transition: all .2s ease-in;
+}
+
+body a {
+  color: hotpink;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: #e90074;
+}
+
+body .sidebar-menu {
+  position: fixed;
+  z-index: 100;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  float: left;
+  background-color: #2c1f33;
+  color: white;
+  height: 100%;
+  width: 65px;
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
+}
+
+body .sidebar-menu:hover {
+  width: 200px;
+  transition: 0.48s ease-in-out;
+}
+
+body .sidebar-menu ul {
+  list-style: none;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body .sidebar-menu ul li {
+  margin-left: -1.5rem;
+}
+
+body .sidebar-menu ul li i {
+  cursor: pointer;
+  position: relative;
+  color: #2c1f33;
+  background: white;
+  border-radius: 0.1em;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .sidebar-menu ul li a {
+  position: relative;
+  display: block;
+  top: -27px;
+  padding-left: 30px;
+  transition: all 0.3s ease;
+  margin-left: 25px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: roboto, sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+body .sidebar-menu ul li a:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+  background: radial-gradient(circle at 94.02% 88.03%, #F18C94, transparent 100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: -10;
+}
+
+body .sidebar-menu ul li:hover a:after {
+  opacity: 1;
+}
+
+body .main-content {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+body .btn a:hover {
+  color: #2c1f33 !important;
+}
+
+.mid-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
