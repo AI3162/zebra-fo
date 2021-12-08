@@ -6,7 +6,7 @@ export const environment = {
   production: false
 };
 
-export const baseUrl = 'https://zebra-heroku.herokuapp.com/';
+export const baseUrl = 'http://192.168.88.11:8093/';
 
 /*
  * For easier debugging in development mode, you can import the following file
